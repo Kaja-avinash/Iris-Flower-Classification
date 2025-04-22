@@ -3,78 +3,98 @@
 
 ![Iris Flowers](https://upload.wikimedia.org/wikipedia/commons/5/56/Kosaciec_szczecinkowaty_Iris_setosa.jpg)
 
-This project classifies iris flowers into three species using a Random Forest classifier, achieving 100% accuracy.
+## 🎯 Objective
 
-## 📋 Table of Contents
-- [Dataset](#dataset)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Results](#results)
-- [Visualizations](#visualizations)
-- [License](#license)
+- Classify Iris flowers into `Setosa`, `Versicolor`, and `Virginica`.
+- Visualize feature distributions and correlations.
+- Reduce dimensionality using **PCA**.
+- Evaluate model performance using accuracy, confusion matrix, and classification report.
 
-## 🌸 Dataset
-The Iris dataset contains measurements for 150 iris flowers from three species:
-- Iris-setosa
-- Iris-versicolor  
-- Iris-virginica
+---
 
-Features:
-- Sepal length (cm)
-- Sepal width (cm) 
-- Petal length (cm)
-- Petal width (cm)
+## 📊 Dataset Overview
 
-## 💻 Installation
-1. Clone the repository:
-```bash
-git clone https://github.com/Kaja-avinash/iris-classification.git
-cd iris-classification
+- File: `IRIS.csv`
+- Features:
+  - `sepal_length`
+  - `sepal_width`
+  - `petal_length`
+  - `petal_width`
+- Target:
+  - `species` (Setosa, Versicolor, Virginica)
 
-🚀 Usage
-To train the model and evaluate its performance, simply run the script:
+---
 
-bash
-iris-flower-classifier.ipynb
-The script will output the following:
-Accuracy of the model
-Confusion matrix
-Classification report
-Additionally, it will generate visualizations of the data distribution and the trained model's predictions.
+## 📦 Key Features
 
-📊 Results
-The Random Forest classifier achieved an impressive 96.67% accuracy on the test data. The classification report includes key performance metrics such as:
+| Feature | Description |
+|--------|-------------|
+| ✅ Classification | Using **Random Forest** with `scikit-learn` |
+| 📉 PCA Analysis | Visualize data in 2D space |
+| 📊 Confusion Matrix | Visual evaluation of model predictions |
+| 🎻 Violin Plots | Feature distribution per class |
+| 🐝 Swarmplots | Individual sample spread |
+| 📦 Boxplots | Outlier and central tendency visualization |
+| 🔥 Correlation Heatmap | Feature-to-feature correlation matrix |
+| 🌈 Pairplot | KDE and pairwise scatter comparison |
 
-Precision: How many selected items are relevant
-Recall: How many relevant items are selected
-F1-score: The harmonic mean of precision and recall
-Evaluation metrics like the confusion matrix will also be displayed to give a deeper understanding of the model's performance.
+---
 
-📈 Visualizations
-Several visualizations are included to help analyze the dataset and understand the model's performance:
+## 🧠 ML Workflow
 
-Violin Plots 🎻
+1. **Load Data** – Load from CSV using `pandas`
+2. **Train-Test Split** – 80% training and 20% testing
+3. **Modeling** – Use `RandomForestClassifier`
+4. **Evaluation** – Accuracy, confusion matrix, classification report
+5. **Visualization** – Deep feature analysis with multiple plots
+6. **PCA** – Reduce to 2D for better understanding of spread
 
-Visualizes the distribution of each feature across different species.
+---
 
-Box Plots 📦
+## 🔧 Tools & Libraries
 
-Displays the range, interquartile range, and outliers for each feature.
+- Python
+- Pandas, NumPy
+- Seaborn, Matplotlib
+- Scikit-learn (for ML and PCA)
 
-Swarm Plots 🐝
+---
 
-Shows the distribution of individual data points and their relationship to the species classes.
+## 📂 Project Structure
 
-Pair Plot with KDE 🔍
+Iris-Flower-Classification/ ├── iris_classification.ipynb ├── data/ │ └── IRIS.csv ├── README.md └── requirements.txt
 
-Displays pairwise relationships between features, enhanced with Kernel Density Estimation (KDE) for better feature distribution visualization.
 
-PCA Plot for Dimensionality Reduction 🔽
+---
 
-Uses Principal Component Analysis (PCA) to reduce the dataset's dimensionality and plot it in a 2D space while preserving variance.
+## 📈 Model Results (Sample Run)
 
-Correlation Heatmap 🌡️
+| Metric | Value |
+|--------|-------|
+| ✅ Accuracy | ~96.67% |
+| 📊 Confusion Matrix | 3x3 with minimal misclassifications |
+| 🧾 Classification Report | High precision & recall across classes |
 
-A heatmap of the correlation matrix to help visualize relationships between different features.
+---
 
-These visualizations provide critical insights into the feature relationships and data distribution across species, assisting in the understanding of how the model performs.
+## 🖼️ Visualizations Included
+
+- ✅ Confusion Matrix Heatmap
+- ✅ Violin Plots
+- ✅ Swarm Plots
+- ✅ Box Plots
+- ✅ Pairplot with KDE
+- ✅ PCA 2D Scatter Plot
+- ✅ Correlation Heatmap
+
+---
+
+## 📌 Usage
+
+1. Open the notebook in **Jupyter Notebook via VS Code**
+2. Install dependencies via `requirements.txt`
+3. Run all cells for preprocessing, training, and visualization
+
+---
+
+
