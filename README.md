@@ -1,5 +1,15 @@
 # Iris Species Classification with Random Forest
 
+<p align="left">
+  <img src="https://img.shields.io/badge/Python-3.8%2B-blue?logo=python" alt="Python 3.8+">
+  <img src="https://img.shields.io/badge/scikit--learn-1.3.0-orange?logo=scikitlearn" alt="scikit-learn 1.3.0">
+  <img src="https://img.shields.io/badge/Status-Active%20%26%20Maintained-brightgreen" alt="Project Status">
+  <img src="https://img.shields.io/badge/License-MIT-green" alt="MIT License">
+  <img src="https://img.shields.io/badge/Model-Random%20Forest-purple" alt="Model Random Forest">
+  <img src="https://img.shields.io/badge/Accuracy-96.67%25-success" alt="Accuracy 96.67%">
+  <img src="https://img.shields.io/badge/Notebook-Jupyter-F37626?logo=jupyter" alt="Jupyter Notebook">
+</p>
+
 ![Iris Flowers](https://upload.wikimedia.org/wikipedia/commons/5/56/Kosaciec_szczecinkowaty_Iris_setosa.jpg)
 
 ## 📋 Table of Contents
@@ -768,6 +778,8 @@ This project is licensed under the **MIT License** - see the LICENSE file for de
 
 ### Contact & Social Links
 - **GitHub**: [@Kaja-avinash](https://github.com/Kaja-avinash)
+- **Email**: your-email@example.com
+- **LinkedIn**: [Your LinkedIn Profile](https://linkedin.com/in/yourprofile)
 
 ### About
 Machine Learning enthusiast passionate about data science, classification problems, and making complex algorithms accessible through clean code and comprehensive documentation.
@@ -1017,4 +1029,11 @@ If this project helped you, please consider:
 ---
 
 **Last Updated**: 2026-03-27  
+**Project Status**: ✅ Active & Maintained  
+**Maintenance**: Regular updates and community support
 
+---
+
+*This README was created to demonstrate professional documentation standards for machine learning projects.*
+
+**Made with ❤️ by Kaja-avinash**
